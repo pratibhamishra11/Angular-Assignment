@@ -1,0 +1,21 @@
+<div class="detail">
+    <div class="heading">{{userInterface?.name | uppercase}}</div>
+    <div>
+        
+        <b>ID</b> : {{userInterface?.id}}<br>
+        <b>Username</b> : {{userInterface?.username}}<br>
+        <b>Email</b> : {{userInterface?.email}}<br>
+        <b>Address</b> : {{userInterface?.address?.street}}<br>
+        {{userInterface?.address?.suite}}<br>
+        {{userInterface?.address?.city}}<br>
+        <b>Zipcode</b> : {{userInterface?.address?.zipcode}}<br>
+        <b>Geo</b> : {{userInterface?.address?.geo?.lat}}<br>
+        {{userInterface?.address?.geo?.lng}}<br>
+        <b>Phone</b> : {{userInterface?.phone}}<br>
+        <b>Website</b> : {{userInterface?.website}}<br>
+        <b>Company</b> : {{userInterface?.company?.name}}<br>
+        {{userInterface?.company?.catchPhrase}}<br>
+        {{userInterface?.company?.bs}}
+  
+    </div>
+</div>

@@ -1,0 +1,11 @@
+<div>
+    <h3 >{{userCard.name| uppercase}}</h3>
+    <div class="container">
+    <div class="button">
+    <a [routerLink] = "['/user-details',userCard.id]"><button (click)="onSelectUser()" >
+            <img src="\assets\icons8-detail-48.png" alt="Details" height="30px" width="40%">
+            <b>Details</b>
+    </button></a>
+    </div>
+    </div>
+</div>

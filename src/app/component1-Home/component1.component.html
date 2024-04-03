@@ -1,0 +1,14 @@
+
+<body>
+<div class="Home">
+    <h2 style="font-family: 'Times New Roman', Times, serif; font-size: 45px;"><b>User Details</b></h2>
+    <ul class="list">
+        @for( user of data; track user.id){
+            <div class="item">
+                <img src="\assets\icons8-male-user-48.png" alt="icon" height="90px" width="30%">
+                <app-component2-user-card [userCard]="user" (userSelected)="onUserSelected($event)"></app-component2-user-card>
+            </div>
+        }
+    </ul>
+</div>
+</body>
